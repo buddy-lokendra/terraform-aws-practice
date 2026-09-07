@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "TerraformCloudWatchListTags",
+      "Effect": "Allow",
+      "Action": [
+        "logs:ListTagsForResource",
+        "logs:GetLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:logs:us-east-1:820986827992:log-group:/terraform/practice/app",
+        "arn:aws:logs:us-east-1:820986827992:log-group:/terraform/practice/app:log-stream:application-stream"
+      ]
+    }
+  ]
+}

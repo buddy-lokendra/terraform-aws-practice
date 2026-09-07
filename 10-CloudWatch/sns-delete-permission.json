@@ -1,0 +1,11 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "TerraformSNSCleanup",
+      "Effect": "Allow",
+      "Action": "sns:DeleteTopic",
+      "Resource": "arn:aws:sns:us-east-1:820986827992:terraform-cloudwatch-alerts"
+    }
+  ]
+}
